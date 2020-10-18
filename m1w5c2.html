@@ -61,31 +61,23 @@
 					</tr>
 				</thead>
 				<tbody id="myTableData">
-					<tr>
-						<td>Anson</td>
-						<td>Good exercise</td>
-						<td>Aiman</td>
-						<td>Easy</td>
-						<td><button type="button" class="close" aria-label="Close">
-  							<span aria-hidden="true">&times;</span>
-							</button></td>
-					</tr>	
+					
 				</tbody>
 			</table>
 		</div>
-		<div class="card px-3 py=3 my-3 bg-light">
+		<div class="card px-3 py=3 my-3 bg-light" hidden id="WODDetails">
 			<h2>WOD Details</h2>
-			<p>Mock Name</p>
-			<p>Mock Description</p>			
-			<p>Mock Assignee</p>
-			<p>Mock Difficulty</p>
-			<p>Done</p>
+			<p id="detailsName">Mock Name</p>
+			<p id="detailsDesc">Mock Description</p>			
+			<p id="detailsAssignee">Mock Assignee</p>
+			<p id="detailsDifficulty">Mock Difficulty</p>
+			<p id="detailsStatus">Done</p>
 		<div class="row">
 			<div class="col-6">
-				<button class="btn btn-danger btn-block">Delete</button>
+				<button class="btn btn-danger btn-block" onclick="deletePressed()">Delete</button>
 			</div>
 			<div class="col-6">
-				<button class="btn btn-info btn-block">Mark as done</button>
+				<button class="btn btn-info btn-block" onclick="markAsDonePressed()">Mark as done</button>
 			</div>
 		</div>
 	</body>
